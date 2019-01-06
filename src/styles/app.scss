@@ -1,0 +1,254 @@
+.app-header {
+  color: $appTextDark;
+  width: 100%;
+  min-height: 150px;
+  background-color: white;
+  &-intro {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 25px 0 0px 3.5%;
+  }
+  &-duration {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 10px 0 0px 3.5%;
+    /*     background-color: $appTextDark;
+    padding: 5px 20px;
+    color: white; */
+  }
+  &-headline {
+    display: flex;
+    align-items: center;
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin: 0px 0 0px 5%;
+  }
+  &-description {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 10px 5% 10px 3.5%;
+  }
+  &-status {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin: 0px 10% 0px 0;
+  }
+  &-controls {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
+
+.app-container {
+  margin: 25px 5%;
+}
+
+.app-text {
+  &-headline {
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+
+  &-subheadline {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1.4rem;
+  }
+
+  &-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0px 0 25px;
+  }
+
+  &-description {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin: 0 0 25px;
+  }
+
+  &-progress {
+    float: right;
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0px 15px 0;
+  }
+  &-italic {
+    font-style: italic;
+    text-align: center;
+  }
+}
+
+.app-setting-btn {
+  background-color: $appHighlight;
+  color: white;
+  padding: 7px 14px;
+  margin: 10px 0 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 10px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+
+  &:hover {
+    background-color: $appHighlight2;
+    color: $appHighlight;
+    font-weight: 400;
+    -webkit-box-shadow: 0px 10px 19px -6px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 0px 10px 19px -6px rgba(0, 0, 0, 0.28);
+    box-shadow: 0px 10px 19px -6px rgba(0, 0, 0, 0.28);
+  }
+
+  &:disabled {
+    cursor: default;
+    background-color: white;
+    color: #d3d1d7;
+    font-weight: 400;
+    -webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4);
+  }
+}
+
+.app-control-btn {
+  background-color: $appHighlight;
+  color: white;
+  padding: 7px 14px;
+  margin-top: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+
+  &:hover {
+    background-color: $appHighlight2;
+    color: $appHighlight;
+    font-weight: 400;
+    -webkit-box-shadow: 0px 10px 19px -6px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 0px 10px 19px -6px rgba(0, 0, 0, 0.28);
+    box-shadow: 0px 10px 19px -6px rgba(0, 0, 0, 0.28);
+    transform: translateY(-1px);
+  }
+
+  &:disabled {
+    cursor: default;
+    background-color: white;
+    color: #d3d1d7;
+    font-weight: 400;
+    -webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4);
+    transform: translateY(4px);
+  }
+
+  &-icon {
+    height: 10px;
+    fill: white;
+  }
+
+  &:hover svg path {
+    fill: $appHighlight;
+    transition-duration: 0.4s;
+  }
+}
+
+.app-btn {
+  background-color: $appHighlight;
+  color: white;
+  padding: 13px 23px;
+  margin-top: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+
+  &:hover {
+    background-color: $appHighlight2;
+    color: $appHighlight;
+    font-weight: 400;
+    -webkit-box-shadow: 0px 10px 19px -6px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 0px 10px 19px -6px rgba(0, 0, 0, 0.28);
+    box-shadow: 0px 10px 19px -6px rgba(0, 0, 0, 0.28);
+    transform: translateY(-1px);
+  }
+
+  /* &:active {
+    background-color: white;
+    color: $appHighlight;
+    font-weight: 400;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+    transform: translateY(4px);
+  } */
+
+  &:disabled {
+    cursor: default;
+    background-color: white;
+    color: #d3d1d7;
+    font-weight: 400;
+    -webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4);
+    transform: translateY(4px);
+  }
+
+  &-icon {
+    height: 12px;
+    fill: white;
+  }
+
+  &:hover svg path {
+    fill: $appHighlight;
+    transition-duration: 0.4s;
+  }
+}
+
+.app-card {
+  /* box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 10px -2px; */
+  /* x-Offset, y-Offset, blur, expand */
+  &-input {
+    background-color: white;
+    border-bottom-right-radius: 25px;
+    padding: 1rem 2rem 0.4rem;
+    margin-bottom: 10px;
+  }
+
+  &-info {
+    background-color: white;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 10px;
+  }
+
+  &-slim {
+    background-color: white;
+    border-top: 1px solid $appBorder;
+    border-radius: 2px;
+    padding: 1rem 2rem 0.4rem;
+  }
+}
+
+// Specific Stuff
+.line-above {
+  border-top: 1px solid $appBorder;
+}

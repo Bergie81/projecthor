@@ -1,0 +1,109 @@
+.box-card {
+  margin: 0px 15px 15px 0;
+}
+
+.el-select .el-input__inner:focus,
+.el-select .el-input.is-focus .el-input__inner,
+.el-input__inner:focus,
+.el-textarea__inner:focus {
+  border-color: $appFocus;
+}
+
+.el-form--label-top .el-form-item__label {
+  padding: 0;
+}
+
+.el-breadcrumb__separator {
+  color: #D3D1D7;
+}
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+  color: #F6F792;
+  &:hover {
+    color: $appSidebar;
+  }
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+.cell {
+  .el-tag {
+    margin-right: 0px;
+  }
+}
+
+.small-padding {
+  .cell {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.fixed-width {
+  .el-button--mini {
+    padding: 7px 10px;
+    width: 60px;
+  }
+}
+
+.status-col {
+  .cell {
+    padding: 0 10px;
+    text-align: center;
+    .el-tag {
+      margin-right: 0px;
+    }
+  }
+}
+
+.el-dialog {
+  width: 80%;
+  min-width: 300px;
+  max-width: 450px;
+  transform: none;
+  left: 0;
+  position: relative;
+  &__wrapper {
+    margin: 0 auto;
+  }
+  &__body {
+    padding: 0 0 15px;
+    margin: 0 25px;
+  }
+}
+
+.article-textarea {
+  textarea {
+    padding-right: 40px;
+    resize: none;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #bfcbd9;
+  }
+} //element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+//dropdown
+.el-dropdown-menu {
+  a {
+    display: block
+  }
+}
